@@ -1,0 +1,47 @@
+<div class="container-xl">
+  <div class="table-responsive">
+    <div class="table-wrapper">
+      <div class="table-title">
+        <div class="row">
+          <div class="col-sm-6">
+            <h4><b>View SampleTask</b></h4>
+          </div>
+          <div class="col-sm-6">
+            <a href="#" routerLink="/Home" class="btn btn-success back"><i class='fas fa-arrow-circle-left'></i> &nbsp;Back</a>
+          </div>
+        </div>
+      </div>       
+      <table class="table table-striped table-hover table-bordered table-content">
+        <tbody>
+          <tr>
+            <td>
+              <label><b>Title</b></label>
+            </td>
+            <td>
+              <span>{{ sampleTaskDetail.title }}</span>              
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label><b>Description</b></label>
+            </td>
+            <td>
+              <span>{{ sampleTaskDetail.description }}</span>              
+            </td>
+          </tr>
+        
+          <tr>
+            <td>
+              <label><b>Status</b></label>
+            </td>
+            <td>
+              <span>{{ getStatusText(sampleTaskDetail.status) }}</span>              
+            </td>
+          </tr>
+         
+        </tbody>
+      </table>       
+    </div>
+  </div>
+</div>
+
