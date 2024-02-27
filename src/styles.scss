@@ -226,3 +226,101 @@ button.toast-close-button {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import 'params.scss';
+
+.container-xl {
+    box-shadow: $base-shadow !important;
+    padding: 0;
+    margin-top: 6%;
+
+    .table-responsive {
+        margin: 30px 0;
+        .table-wrapper {
+            background: $secondary-color;
+            padding: 20px 25px;
+            border-radius: 3px;
+            box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+
+            .table-title {
+                padding-bottom: 15px;
+                background: $primary-color;
+                color: $secondary-color;
+                padding: 16px 30px;
+                min-width: 100%;
+                margin: -20px -25px 10px;
+                border-radius: 3px 3px 0 0;
+                .back {
+                    float: right;
+                    text-transform: uppercase;
+                    font-size: 13px !important;
+                }
+                .btn {
+                    color: $secondary-color;
+                    float: right;
+                    font-size: 13px;
+                    border: none;
+                    min-width: 50px;
+                    border-radius: 2px;
+                    border: none;
+                    outline: none !important;
+                    margin-left: 10px;
+                    i {
+                        float: left;
+                        font-size: 21px;
+                        margin-right: 5px;
+                    }
+                    span {
+                        float: left;
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .table-footer {
+                padding-top: 15px;
+                
+            }
+            .table-content {
+                select {
+                    width: 100%;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.5;
+                    color: #212529;
+                    background-color: $secondary-color;
+                    background-clip: padding-box;
+                    border: 1px solid #ced4da;
+                }
+                .p-10 {
+                    padding: 10px;
+                }
+                .p-t-b-10 {
+                    padding: 10px 0px;
+                }
+                .requiredStar {
+                    color: $error-color;
+                    padding-left: 5px;
+                }
+                .center-align {
+                    text-align: center;
+                }
+                .delete {
+                    color: $error-color;
+                    padding: 5px;
+                }
+                .edit {
+                    color: $warning-color;
+                    padding: 5px;
+                }
+                .view {
+                    color: $info-color;
+                }
+                .padding10 {
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
